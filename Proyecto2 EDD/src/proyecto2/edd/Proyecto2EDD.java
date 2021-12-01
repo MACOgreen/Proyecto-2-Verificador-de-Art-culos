@@ -5,17 +5,18 @@
  */
 package proyecto2.edd;
 
-/**
- *
- * @author mani
- */
+import VerificarOriginalidad.*;
+        
 public class Proyecto2EDD {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
-        // TODO code application logic here
+        CargarArticulo prueba = new CargarArticulo();
+        String cadena;
+        cadena=prueba.GenerarCadena();
+        
+        System.out.println(cadena);
+        
     }
     
 }
