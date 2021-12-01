@@ -12,10 +12,19 @@ public class Proyecto2EDD {
     
     public static void main(String[] args) {
         CargarArticulo prueba = new CargarArticulo();
+        AlgorRK pr= new AlgorRK();
+        
         String cadena;
         cadena=prueba.GenerarCadena();
+        String patron="";
+        int impar=101;
+        int indice;
         
-        System.out.println(cadena);
+        indice= (int) pr.RabinKarp(patron, cadena , impar);
+        
+        
+        
+        System.out.println(indice);
         
     }
     
