@@ -58,8 +58,9 @@ public class AlgorRK {
                  
                 if (j == m){
                     
-                    JOptionPane.showMessageDialog(null, "El fragmento fue encontrado en la posición: "+ i);
                     System.out.println("El fragmento fue encontrado en la posición: "+ i);
+                    JOptionPane.showMessageDialog(null,"El fragmento fue encontrado en la posición: "+ i );
+         
                     return i; 
                 }
                 
@@ -78,6 +79,9 @@ public class AlgorRK {
             
         }
         
+        
+        JOptionPane.showMessageDialog(null, "No se encotró el fragmento ingresado. Verifique que lo esta escribiendo bien. ");
+        System.out.println(" No se encotró el fragmento ingresado. Verifique que lo esta escribiendo bien.");
         return (float) i;
   
         

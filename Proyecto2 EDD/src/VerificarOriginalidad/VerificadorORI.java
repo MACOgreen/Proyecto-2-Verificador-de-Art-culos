@@ -25,7 +25,7 @@ public class VerificadorORI {
         int impar=101;
         int indice;
         
-        indice= (int) pr.RabinKarp(patron, cadena , impar);
+        indice= (int) pr.RabinKarp(patron, cadena , impar);  // Aplico el logaritmo de Rabin - Karp
         
         
         ///Reescribo la cadena en otra variable para remarcar el fragmento encontrado. 
