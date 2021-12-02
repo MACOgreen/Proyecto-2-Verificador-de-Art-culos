@@ -9,22 +9,24 @@ package VerificarOriginalidad;
 
 public class VerificadorORI {
     
-    public void comenzar(){
+    public String comenzar(String cadena, String patron){
         
         CargarArticulo prueba = new CargarArticulo();
         AlgorRK pr= new AlgorRK();
         
-        String cadena;
+        //String cadena;
+        
         String cadenaResaltada="";
         
-        cadena=prueba.GenerarCadena();   // Aqui se aloja el texto del articulo
+       // cadena=prueba.GenerarCadena();   // Aqui se aloja el texto del articulo
         
-        String patron="It is a single software in which all parts of development are done.";//// El fragmento que se quiere buscar en el articulo.
+        //String patron="It is a single software in which all parts of development are done.";//// El fragmento que se quiere buscar en el articulo.
         
         int impar=101;
         int indice;
         
         indice= (int) pr.RabinKarp(patron, cadena , impar);
+        
         
         ///Reescribo la cadena en otra variable para remarcar el fragmento encontrado. 
         for(int i=0;i<cadena.length();i++){
@@ -49,7 +51,7 @@ public class VerificadorORI {
         
         System.out.println( cadenaResaltada);
         
-        
+        return cadenaResaltada;
         
         
         

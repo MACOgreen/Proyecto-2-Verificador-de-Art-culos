@@ -11,8 +11,9 @@ public class Proyecto2EDD {
 
     
     public static void main(String[] args) {
-        VerificadorORI veri= new VerificadorORI();
-        veri.comenzar();
+        
+//        VerificadorORI veri= new VerificadorORI();
+//        veri.comenzar();
         
         
         
