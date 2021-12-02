@@ -5,6 +5,8 @@
  */
 package VerificarOriginalidad;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author mani
@@ -55,6 +57,8 @@ public class AlgorRK {
                 }
                  
                 if (j == m){
+                    
+                    JOptionPane.showMessageDialog(null, "El fragmento fue encontrado en la posición: "+ i);
                     System.out.println("El fragmento fue encontrado en la posición: "+ i);
                     return i; 
                 }
