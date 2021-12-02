@@ -25,7 +25,7 @@ public class AlgorRK {
         
         //Se halla el valor de h
         for ( i = 0; i < m - 1; i++){
-            h = (h * NumImpar) % NumImpar; 
+            h = (h * d) % NumImpar; 
         }
         
         for ( i = 0; i < m; i++) 
@@ -55,7 +55,7 @@ public class AlgorRK {
                 }
                  
                 if (j == m){
-                    System.out.println("Patron encontrado en  indice: "+ i);
+                    System.out.println("El fragmento fue encontrado en la posición: "+ i);
                     return i; 
                 }
                 

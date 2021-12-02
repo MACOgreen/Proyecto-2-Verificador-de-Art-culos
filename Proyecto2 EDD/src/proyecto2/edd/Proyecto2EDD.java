@@ -11,21 +11,23 @@ public class Proyecto2EDD {
 
     
     public static void main(String[] args) {
-        CargarArticulo prueba = new CargarArticulo();
-        AlgorRK pr= new AlgorRK();
-        
-        String cadena;
-        cadena=prueba.GenerarCadena();
-        String patron="";
-        int impar=101;
-        int indice;
-        
-        indice= (int) pr.RabinKarp(patron, cadena , impar);
+        VerificadorORI veri= new VerificadorORI();
+        veri.comenzar();
         
         
         
-        System.out.println(indice);
         
+        
+        
+        //System.out.println(indice);
+        
+      
+        
+//        for(int i=0; i<patron.length();i++){
+//            
+//            System.out.print( (char) cadena.codePointAt(255+i));
+//        }
+//        
     }
     
 }
