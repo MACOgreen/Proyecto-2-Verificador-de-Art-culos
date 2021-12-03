@@ -9,7 +9,7 @@ package ClaseHash;
  *
  * @author aleja
  */
-public class Lista {
+public class Lista { // Lista para manejar multiples lecturas de artículos. 
 
     private NodoLista first;
     private NodoLista last;

@@ -9,10 +9,11 @@ package ClaseHash;
  *
  * @author aleja
  */
-public class NodoLista2 {
+
+public class NodoLista2 { // Practicamente es el mismo tipo nodo que NodoHash. Por comodidad se  diseño este nodo. 
     private NodoLista2 next;
-    private String nombre;
-    private int number;
+    private String nombre; // Nombre de la palabra que entra a la tabla hash y a esta lista.
+    private int number;    // Contador de la palabra que entra a la tabla hash y a esta lista.
 
     public NodoLista2(String nombre, int number) {
         this.nombre = nombre;

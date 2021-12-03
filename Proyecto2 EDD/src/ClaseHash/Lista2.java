@@ -9,7 +9,7 @@ package ClaseHash;
  *
  * @author aleja
  */
-public class Lista2 {
+public class Lista2 { // Lista para el apartado 5
     private NodoLista2 first;
     private NodoLista2 last;
     private int size;

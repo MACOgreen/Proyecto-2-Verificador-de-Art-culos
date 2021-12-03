@@ -13,17 +13,17 @@ public class Base_de_Datos {
     Cargar cargar = new Cargar();  //Para cargar archivo.
     private Hash_table hash_table;
     File file;
-    private String path;
-
+    public String path;
+    public String prueba_text;
 
     public Hash_table datos(Lista2 lista1) {
         Hash_table tablahash = new Hash_table(10111);
         String line;
-        String prueba_text = "";
+        prueba_text = "";
         try {
             file = cargar.abrirArchivo();
-            path = file.getPath();
-
+            
+            
         } catch (Exception ex) {  
         }
 
@@ -128,9 +128,10 @@ public class Base_de_Datos {
     
     public Lista listas_info(Lista lista, Lista2 lista1){
         Hash_table tablahash = new Hash_table(10111);
-        Base_de_Datos bdatos = new Base_de_Datos();
-        tablahash = bdatos.datos(lista1);
+        //Base_de_Datos bdatos = new Base_de_Datos();
+        tablahash = this.datos(lista1);
         lista.addAtTheEnd(tablahash, lista1);
+        
         return lista; 
     }
 
@@ -240,8 +241,16 @@ public class Base_de_Datos {
     /**
      * @return the path
      */
-    public String getPath() {
-        return path;
-    }
+//    public String getPath() {
+//        
+//        return path;
+//    }
+//
+//    /**
+//     * @param path the path to set
+//     */
+//    public void setPath(String path) {
+//        this.path = path;
+//    }
 
 }

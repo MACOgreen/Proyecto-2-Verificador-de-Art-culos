@@ -15,6 +15,7 @@ public class NodoLista {
     private Lista2 lista1;
     //private String nombre;
     private Hash_table tablahash;
+    private String articulo;
 
     public NodoLista(Hash_table tablahash, Lista2 lista1) { 
         this.tablahash = tablahash;
@@ -46,6 +47,20 @@ public class NodoLista {
 
     public void setLista1(Lista2 lista1) {
         this.lista1 = lista1;
+    }
+
+    /**
+     * @return the path
+     */
+    public String getAR() {
+        return articulo;
+    }
+
+    /**
+     * @param articulo the path to set
+     */
+    public void setAR(String articulo) {
+        this.articulo = articulo;
     }
 
 }

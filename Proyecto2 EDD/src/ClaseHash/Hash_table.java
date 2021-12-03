@@ -166,14 +166,17 @@ public class Hash_table {
         }   
     }
     
-    public void mostrar_palabras(Lista2 lista1){
+    public String mostrar_palabras(Lista2 lista1){
         lista1.ordenamiento();
+        String PalabrasDescendientes="";
         NodoLista2 temp = lista1.getFirst();
         for (int i = 0; i < lista1.getSize(); i++) {
             if (temp != null) {
                 System.out.println("Palabra " + temp.getNombre() + " del texto: " + temp.getNumber());
+                PalabrasDescendientes+="Palabra " +"'"+ temp.getNombre()+"'" + " del texto: " + temp.getNumber()+"\n";
                 temp = temp.getNext();
             }
         }
+        return PalabrasDescendientes;
     }
 }
