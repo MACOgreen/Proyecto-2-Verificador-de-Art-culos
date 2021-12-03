@@ -9,6 +9,8 @@ package VerificarOriginalidad;
 
 public class VerificadorORI {
     
+    public int in;
+    
     public String comenzar(String cadena, String patron){
         
         CargarArticulo prueba = new CargarArticulo();
@@ -25,27 +27,34 @@ public class VerificadorORI {
         int impar=101;
         int indice;
         
-        indice= (int) pr.RabinKarp(patron, cadena , impar);  // Aplico el logaritmo de Rabin - Karp
+        indice = (int) pr.RabinKarp(patron, cadena , impar);  // Aplico el logaritmo de Rabin - Karp
+        this.in=indice;
         
+        
+        // Caso de que no se encuentre el patron que se esta buscando.
+        if(indice==-1){
+            cadenaResaltada=cadena;
+            return cadenaResaltada;
+        }
+        //
         
         ///Reescribo la cadena en otra variable para remarcar el fragmento encontrado. 
-        for(int i=0;i<cadena.length();i++){
-            
-            if( i==indice-1){
-                cadenaResaltada+= "{{<<<<<";
-                cadenaResaltada+= (char) cadena.codePointAt(i);
-                continue;
-            }
-            
-            if(i==indice+patron.length()){
-               cadenaResaltada+= ">>>>>}}";
-               cadenaResaltada+= (char) cadena.codePointAt(i);
-               continue; 
-            }
-            
-            cadenaResaltada+= (char) cadena.codePointAt(i);
-   
-        }
+                for(int i=0;i<cadena.length();i++){
+
+                    if( i==indice-1){
+                        cadenaResaltada+= "{{<<<<<";
+                        cadenaResaltada+= (char) cadena.codePointAt(i);
+                        continue;
+                    }
+
+                    if(i==indice+patron.length()){
+                       cadenaResaltada+= ">>>>>}}";
+                       cadenaResaltada+= (char) cadena.codePointAt(i);
+                       continue; 
+                    }
+
+                    cadenaResaltada+= (char) cadena.codePointAt(i);
+                }
         ///
         
         

@@ -40,6 +40,7 @@ public class VerificarOriginalidad extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(153, 255, 102));
+        setUndecorated(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 102));
@@ -178,7 +179,7 @@ public class VerificarOriginalidad extends javax.swing.JFrame {
         cadenaResaltada=verificador.comenzar(cadena, patron);
         
         jTextArea1.setText(cadenaResaltada);
-        TextoFragmento.setText(patron);
+        TextoFragmento.setText( "El fragmento fue encontrado en la posición: "+  verificador.in +"\n"+  patron);
     }//GEN-LAST:event_BuscarframentoActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
