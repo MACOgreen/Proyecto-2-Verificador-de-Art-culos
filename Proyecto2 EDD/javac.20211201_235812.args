@@ -1,0 +1,18 @@
+-d
+"C:\\Users\\aleja\\Desktop\\Proyecto-2-Verificador-de-Art-culos\\Proyecto2 EDD\\build\\classes"
+-classpath
+"C:\\Users\\aleja\\Desktop\\Proyecto-2-Verificador-de-Art-culos\\Proyecto2 EDD\\build\\classes"
+-sourcepath
+"C:\\Users\\aleja\\Desktop\\Proyecto-2-Verificador-de-Art-culos\\Proyecto2 EDD\\src"
+-target
+11
+-encoding
+UTF-8
+-g
+-processorpath
+"C:\\Users\\aleja\\Desktop\\Proyecto-2-Verificador-de-Art-culos\\Proyecto2 EDD\\build\\empty"
+-s
+"C:\\Users\\aleja\\Desktop\\Proyecto-2-Verificador-de-Art-culos\\Proyecto2 EDD\\build\\generated-sources\\ap-source-output"
+-source
+11
+"C:\\Users\\aleja\\Desktop\\Proyecto-2-Verificador-de-Art-culos\\Proyecto2 EDD\\src\\proyecto2\\edd\\Proyecto2EDD.java"
